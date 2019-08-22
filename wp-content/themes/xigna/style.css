@@ -1,0 +1,124 @@
+body {
+	color: white;
+	text-align: center;
+	font-family: 'Calibri', Times, serif;
+	background-color: #ffffff;
+  }
+
+.blue {
+	background: linear-gradient(#27A8E1, #0172BE)
+}
+
+.logo {
+	position: relative;
+	top: 40px;
+}
+
+
+.wrapper {
+	width:80%;
+	height:100%;
+	margin:0 auto;
+}
+.video-colgate        {position:relative;}
+.video-colgate .ratio {display:block;width:100%;height:auto;}
+.video-colgate iframe {position:absolute;top:0;left:0;width:100%; height:100%;}
+/*.video-colgate{
+	position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;	
+	width: 50%;
+    height: 20%;
+}
+
+.video-colgate iframe{
+	position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
+
+.img-responsive{
+	width: 100%;
+  	height: auto;
+}
+
+.btn{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.desactive img{
+	filter: grayscale(10);
+}
+
+
+@media only screen and (max-width: 1366px) {
+	h1{
+		font-size: 35px;
+	}
+
+	p{
+		font-size: 30px;
+		font-family: 'Calibri', 'Times New Roman';
+	}
+
+	.col-1{ width: 50%;}
+    .col-2{ width: 100%;}
+    .col-3{ width: 100%;}
+    .col-4{ width: 100%;}
+    .col-5{ width: 100%;}
+    .col-6{ width: 100%;}
+}
+
+/* --------------------------Grid System--------------------------*/
+grid-container{
+	width: 100%; 
+	max-width: 1200px;      
+}
+
+/*-- our cleafix hack -- */ 
+.row:before, 
+.row:after {
+	content:"";
+	display: table ;
+	clear:both;
+}
+
+[class*='col-'] {
+	float: left; 
+	min-height: 1px; 
+	width: 16.66%; 
+	/*-- our gutter -- */
+	padding: 12px; 
+	/*background-color: #FFDCDC;*/
+}
+
+.col-1{ width: 16.66%; }
+.col-2{ width: 33.33%; }
+.col-3{ width: 50%;    }
+.col-4{ width: 66.66%; }
+.col-5{ width: 83.33%; }
+.col-6{ width: 100%;   }
+
+.outline, .outline *{
+	outline: 1px solid #F6A1A1; 
+}
+
+/*-- some extra column content styling --*/
+[class*='col-'] > p {
+ /*background-color: #FFC2C2; */
+ padding: 0;
+ margin: 0;
+ text-align: center; 
+ color: white; 
+}
