@@ -11,13 +11,13 @@ body {
 
 .logo {
 	position: relative;
-	top: 40px;
+	top: 30px;
 }
 
 
 .wrapper {
-	width:80%;
-	height:100%;
+	width:40%;
+	height:40%;
 	margin:0 auto;
 }
 .video-colgate        {position:relative;}
